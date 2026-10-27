@@ -1,0 +1,302 @@
+/* style1.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Silhouette green */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid white; /* Darker silhouette green border */
+    box-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+img{
+
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: initial;
+    font-style: oblique;
+    text-shadow: darkgreen;
+    display: inline-block(header);
+
+
+}
+
+/* Navigation styling */
+.menu-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: inline-block(search-bar);
+    float: left;
+
+}
+
+.menu-toggle button {
+    background-color: #4CAF50; /* Silhouette green */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+    }
+
+.menu-toggle button:hover {
+    background-color: #45a049; /* Darker silhouette green on hover */
+}
+
+#menu {
+    display: none;
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #8fbc8f;
+}
+
+#menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block(menu-toggle);
+    float: right;
+}
+
+.search-bar input[type="text"] {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #f0f8ff; /* Silhouette green */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #fff; /* White text color */
+}
+
+.search-bar button {
+    background-color: #45a049; /* Darker silhouette green */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-bar button:hover {
+    background-color: #3f7d41; /* Darker green on hover */
+}
+
+/* Main content styling */
+main {
+
+    text-align: center;
+
+
+}
+
+h2{
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+}
+
+
+    .song {
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: relative; /* Menambahkan posisi relatif untuk pseudo-element */
+    overflow: hidden; /* Mengatur overflow untuk pseudo-element */
+}
+.song h3 {
+    margin: 0;
+}
+
+/* Animasi pemutaran lagu */
+.song audio {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.song:hover audio {
+    background-color: #ddd;
+}
+
+/* Animasi interaktif saat hover */
+.song {
+    transition: transform 0.2s ease;
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 286px;
+    left: 0;
+    width: 100%;
+    height: 210%;
+    background-image: url(gambar/bg2.jpeg); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: full;
+    filter: blur(10px); /* Efek blur */
+    z-index: -1; /* Agar latar belakang berada di belakang konten */
+    border-radius: 10px; /* Rounded corners */}
+
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50; /* Silhouette green */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 4px solid #45a049; /* Darker silhouette green border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.review textarea {
+    width: 98%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px;
+    background-color: #f5f5f5; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.review button, .search-review button {
+    background-color: #246724; /* Darker silhouette green */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-review input[type="text"]{
+    width: 55%;
+    padding: 15px;
+}
+
+.review button:hover, .search-review button:hover {
+    background-color: #246724; /* Darker green on hover */
+}
+
+
+/* Animasi pemutaran lagu */
+.song audio {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.song:hover audio {
+    background-color: #ddd;
+}
+
+/* Animasi interaktif saat hover */
+.song {
+    transition: transform 0.2s ease;
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
+
+/* Animasi hover pada tombol */
+.search-bar button,
+.review button,
+.search-review button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover,
+.review button:hover,
+.search-review button:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+/* Animasi Transisi untuk Header */
+header {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+/* Animasi Rotasi pada Tombol Toggle Menu */
+.menu-toggle button {
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle button:hover {
+    transform: rotate(90deg);
+}
+
+/* Animasi Fade In pada Footer */
+footer {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+body:hover footer {
+    opacity: 1;
+}
+

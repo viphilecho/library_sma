@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylelagu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IL KEL 7 PERPUS</title>
+    
+</head>
+
+
+<body>
+        <header>
+          <table cellspacing="8">  <tr><td><img src="gambar/serviam.png" width="110px">  </td><td>  <img src="gambar/mb.png" width="110px"> </td> <td> <img src="gambar/sp.jpg" width="110px"> </td><td width="139"></td><td><h1>Web Perpustakaan</h1></td></tr></table>
+</header>
+
+<br>
+
+    <div class="menu-toggle">
+        <button onclick="toggleMenu()">☰</button>
+        <nav id="menu" style="display: none;">
+            <ul>
+                <li><a href="Struktur Web 1.html">Home</a></li>
+                <li><a href="#">Pencarian</a></li>
+                <li><a href="scan.html">Scan</a></li>
+                <li><a href="lagu.html">List Lagu</a></li>
+                <li><a href=""><img src="gambar/serviam.png" width="50"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-bar">
+        <form action="#" method="GET">
+            <input type="text" name="search" placeholder="Cari...">
+            <button type="submit">Cari</button>
+        </form>
+    </div>
+
+
+    
+   <main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h2>Daftar Lagu</h2>
+    <p>Lagu lagu berupa instrumen</p>
+    <div class="song">
+        <h3>Love Story</h3>
+        <audio controls>
+            <source src="lagu/lovestory.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>Solenzara</h3>
+        <audio controls>
+            <source src="lagu/solenzara.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>Artic Monkey - I Wanna Be Yours</h3>
+        <audio controls>
+            <source src="lagu/iwannabeyours.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>Golden Hour - JVKE</h3>
+        <audio controls>
+            <source src="lagu/goldenhour.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>HAUSER - Air on the G String</h3>
+        <audio controls>
+            <source src="lagu/hauser.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>September - Sparky</h3>
+        <audio controls>
+            <source src="lagu/september.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>Dawn - Pride & Prejudice</h3>
+        <audio controls>
+            <source src="lagu/dawn.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br>
+    <div class="song">
+        <h3>Amore Mio Aiutami - Piero Piccioni</h3>
+        <audio controls>
+            <source src="lagu/amore.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div></center>
+</main>
+
+
+    <footer>
+
+  <section class="review">
+    <h2>Tulis Review</h2>
+    <textarea placeholder="Tulis review Anda di sini..."></textarea>
+    <button>Submit</button>
+  </section>
+  <section class="search-review">
+    <h2>Cari Review</h2>
+    <input type="text" placeholder="Cari review...">
+    <button>Cari</button>
+  </section>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+

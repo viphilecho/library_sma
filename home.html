@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IL KEL 7 PERPUS</title>
+    
+</head>
+
+
+<body>
+        <header>
+          <table cellspacing="8">  <tr><td><img src="gambar/serviam.png" width="110px">  </td><td>  <img src="gambar/mb.png" width="110px"> </td> <td> <img src="gambar/sp.jpg" width="110px"> </td><td width="139"></td><td><h1>Web Perpustakaan</h1></td></tr></table>
+</header>
+
+<br>
+
+    <div class="menu-toggle">
+        <button onclick="toggleMenu()">☰</button>
+        <nav id="menu" style="display: none;">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Pencarian</a></li>
+                <li><a href="scan.html">Scan</a></li>
+                <li><a href="lagu.html">List Lagu</a></li>
+                <li><a href=""><img src="gambar/serviam.png" width="50"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-bar">
+        <form action="#" method="GET">
+            <input type="text" name="search" placeholder="Cari...">
+            <button type="submit">Cari</button>
+        </form>
+    </div>
+
+
+    
+   <main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Selamat Datang di Perpustakaan Theodorus</h2>
+    <div class="gallery">
+        <img width="400px" src="gambar/perpus1.jpeg" alt="Foto 1">
+        <br>
+        <img width="400px" src="gambar/perpus2.jpeg" alt="Foto 2">
+        <br>
+        <img width="400px" src="gambar/perpus3.jpeg" alt="Foto 3">
+        <!-- Tambahkan gambar lainnya di sini -->
+    </div>
+</main>
+
+    <footer>
+
+  <section class="review">
+    <h2>Tulis Review</h2>
+    <textarea placeholder="Tulis review Anda di sini..."></textarea>
+    <button>Submit</button>
+  </section>
+  <section class="search-review">
+    <h2>Cari Review</h2>
+    <input type="text" placeholder="Cari review...">
+    <button>Cari</button>
+  </section>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+

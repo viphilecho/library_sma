@@ -1,0 +1,160 @@
+/* Style untuk elemen body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style untuk elemen header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* Style untuk judul */
+header h1 {
+    margin: 0; /* Menghilangkan margin */
+}
+
+/*style utk main*/
+main {
+
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding-bottom: 1000px;
+
+
+
+}
+
+/* Style untuk tombol menu */
+.menu-toggle {
+    text-align: center; /* Pusatkan tombol menu */
+       display: inline-block; /* Tampilkan sebagai inline-block */
+       float: left;
+
+}
+
+.menu-toggle button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Style untuk menu navigasi */
+nav ul {
+    list-style-type: none;
+    width: 100px;
+    height: 110px ;
+    background-color: #fff8dc;
+   
+}
+
+nav ul li {
+    margin-top: 10px;
+    text-align: left;
+
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1px;
+
+    
+
+    
+}
+
+/* Style untuk kolom pencarian */
+.search-bar {
+    text-align: center; /* Pusatkan kolom pencarian */
+       display: inline-block; /* Tampilkan sebagai inline-block */
+       float: right;
+}
+
+.search-bar form {
+    display: inline-block;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button[type="submit"] {
+    
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Style untuk elemen footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/*menu item*/
+
+.menu-container, .menu-item {
+
+  color: #fff;
+
+
+}
+
+
+
+/* Style untuk elemen review */
+.review, .search-review {
+  margin-top: 20px;
+}
+
+.review textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;}
+
+.review button, .search-review button {
+  padding: 10px 20px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-review input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-review button {
+  padding: 10px 20px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
